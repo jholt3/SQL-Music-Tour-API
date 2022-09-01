@@ -20,7 +20,7 @@ stages.get('/', async (req, res) => {
 
 
 // FIND A SPECIFIC STAGE
-stages.get('/:id', async (req, res) => {
+stages.get('/:stages', async (req, res) => {
     try {
         const foundStage = await Stage.findOne({
             where: { stage_id: req.params.id }
